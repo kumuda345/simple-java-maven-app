@@ -1,0 +1,14 @@
+# Use a base image with Java installed
+FROM openjdk:11-jdk
+
+# Set the working directory inside the container
+WORKDIR /var/lib/jenkins/workspace/Demo/target/*.jar
+
+# Copy the target JAR file to the container
+COPY target/*.jar .
+
+# Specify the command to run the JAR file
+CMD ["java", "-jar", "my-app-1.0-SNAPSHOT.jar"]
+
+
+
