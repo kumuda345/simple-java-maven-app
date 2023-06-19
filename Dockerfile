@@ -5,7 +5,7 @@ FROM openjdk:11-jdk
 WORKDIR /app
 
 # Copy the target JAR file to the container
-COPY /var/lib/jenkins/workspace/Demo/target/my-app-1.0-SNAPSHOT.jar /app/my-app-1.0-SNAPSHOT.jar
+COPY /var/lib/jenkins/workspace/Demo/target/* /app/
 
 # Specify the command to run the JAR file
 CMD ["java", "-jar", "my-app-1.0-SNAPSHOT.jar"]
