@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: Demo_container
-        image: kumuda0707/myimage
+        image: kumuda0707/myimage:latest
         ports:
         - containerPort: 8080
