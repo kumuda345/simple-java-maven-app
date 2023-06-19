@@ -10,5 +10,8 @@ CMD  cp -r /var/lib/jenkins/workspace/Demo/target/my-app-1.0-SNAPSHOT.jar  /app/
 # Specify the command to run the JAR file
 CMD ["java", "-jar", "my-app-1.0-SNAPSHOT.jar"]
 
+# Exposing port
+EXPOSE 8080
+
 
 
